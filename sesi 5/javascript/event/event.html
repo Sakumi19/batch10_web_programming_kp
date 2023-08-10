@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+</head>
+<body>
+    <h1>event</h1>
+    
+    <!-- memberi event pada tombol -->
+    <button onclick="tampilkan_nama()">Klik saya</button>
+
+    <!-- id hasil -->
+    <div id="hasil"></div>
+
+    <script>
+        // function tampilkan_nama
+        function tampilkan_nama() {
+            document.getElementById('hasil').innerHTML = "<h3>nama saya adalah fox</h3>";
+        }
+    </script>
+</body>
+</html>

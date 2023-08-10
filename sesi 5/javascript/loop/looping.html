@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loop</title>
+  </head>
+  <body>
+    <!-- looping -->
+    <button onclick="print()">print 1000</button>
+    <div id="text"></div>
+
+    <script>
+      // Looping
+      function print() {
+        const dt = document.getElementById("text");
+        let hitung = 0;
+        while (hitung < 1000) {
+          // ini di dalam perulangan
+          dt.innerHTML = dt.innerHTML + "<p>Saya tidak akan terlambat lagi</p>";
+          hitung++;
+        }
+      }
+    </script>
+  
+  </body>
+</html>

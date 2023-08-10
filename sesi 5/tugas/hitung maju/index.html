@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung maju dan mundur</title>
+</head>
+<body>
+    <h1>hitung maju dan mundur</h1>
+
+    <button onclick="hitungMaju()">-</button>
+    <button onclick="hitungMundur()">+</button>
+
+    <div id="hasil">0</div>
+    <script>
+        var angka = 0;
+        var hasil = document.getElementById('hasil');
+
+        function hitungMaju() {
+            hasil.innerHTML = angka;
+            angka--;
+            // menggunakan op -- decrement
+            // angka - angka - 1;
+        }
+        function hitungMundur() {
+            hasil.innerHTML = angka; 
+            angka ++ ;
+            // menggunakan op ++ increment
+            // angka - angka + 1
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+menghitung luas dan keliling lingkaran
+
+Diketahui rumus menghitung luas dan keliling lingkaran
+    L = phi x r x r
+    K = 2 x phi x r
+keterangan :L = luas 
+            K = keliling 
+            r = jari - jari
+            phi = 22/7 atau 3,14
+-----------------------------------------
+mencari luas
+
+Diketahui: 
+    phi = 3,14
+    r = 4 cm
+penyelesaian:
+L = phi x r x r 
+    3,14 x (4 x 4)cm
+    3,14 x 16cm
+    50,24cm
+maka luas dari lingkaran tersebut adalah 50,24 cm
+------------------------------------------
+mencari keliling
+
+Diketahui: 
+    phi = 3,14
+    r = 4 cm
+penyelesaian:
+K = 2 x phi x r
+    2 x 3,14 x 4cm
+    6,28 x 4cm 
+    25,12 cm
+maka keliling dari lingkaran tersebut adalah 25,12cm
+
+nama: Ade Kurniawan
+kode peserta : INPG-PKJ-10-014

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tugas Mandiri 6</title>
+  </head>
+
+  <body>
+    <div id="paragraf-container">
+      <p class="paragraf">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat
+        recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo
+        dolorum consequatur sed laudantium suscipit quis magni, maiores in?
+      </p>
+    </div>
+
+    <script>
+      const paragrafContainer = document.getElementById("paragraf-container");
+    
+      //   looping paragraf
+      for (let i = 0; i < 2; i++) {
+        let cloneParagraf = paragrafContainer.firstElementChild.cloneNode(true);
+        paragrafContainer.appendChild(cloneParagraf);
+      }
+    
+      //  Warna acak 
+      function getRandomColor() {
+        const letters = "0123456789ABCDEF";
+        let color = "#";
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+
+      //   Ubah warna
+      const paragraphs = document.getElementsByClassName("paragraf");
+
+      function changeTextColor() {
+        for (const paragraph of paragraphs) {
+          const randomColor = getRandomColor();
+          paragraph.style.color = randomColor;
+        }
+      }
+    
+      // Mengganti warna setiap 200ms
+      setInterval(changeTextColor, 200);
+    </script>
+  </body>
+</html>
